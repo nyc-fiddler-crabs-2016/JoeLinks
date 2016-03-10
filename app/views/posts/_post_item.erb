@@ -1,0 +1,12 @@
+<div class="post-item">
+  <a href="<%= post.url %>"><%= post.title %></a><span class="count"><%= post.votes_count %> Votes!</span>
+  <div class="footer">
+    <a href="/users/<%= post.user.id %>"><%= post.user.username %> </a>
+    |
+    <a href="/posts/<%= post.id%>"><%= post.comments_count %> comments</a>
+  </div>
+
+
+
+
+</div>

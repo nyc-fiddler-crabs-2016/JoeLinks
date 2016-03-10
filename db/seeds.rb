@@ -1,9 +1,9 @@
-user_amount         = 4
-post_amount         = 40
-comment_amount      = 30
+user_amount         = 0
+post_amount         = 0
+comment_amount      = 0
 
-post_vote_amount    = 50
-post_comment_amount = 50
+post_vote_amount    = 500
+comment_vote_amount = 500
 
 
 # USERS
@@ -21,7 +21,7 @@ user_ids = User.all.map { |user| user.id }
 
 # POSTS
 post_amount.times do
-  Post.create( title:     Faker::Book.title,
+  Post.create( title:     Faker::Hipster.sentence(4),
                url:       Faker::Internet.url,
                user_id:   user_ids.sample
                )

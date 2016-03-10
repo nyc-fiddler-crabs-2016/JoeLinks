@@ -9,4 +9,14 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :comment_votes
 
+  # has_secure_password
+
+  def posts_made_count
+    self.posts.count
+  end
+
+  def comments_made_count
+    self.comments.count
+  end
+
 end

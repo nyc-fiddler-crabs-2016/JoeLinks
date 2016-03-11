@@ -12,11 +12,14 @@ post '/login' do
     session[:user_id] = user.id
     redirect '/'
   else
+    # need error handling here to tell user why login failed
     erb :'/users/login'
   end
 end
 
+#try to make this a delete request
 get '/logout' do
+  # session.clear is best here
   session.delete(:user_id)
   redirect '/'
 end

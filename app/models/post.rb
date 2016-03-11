@@ -2,6 +2,10 @@ class Post < ActiveRecord::Base
   validates :title, :url, :user_id, presence: true
 
   belongs_to :user
+  # validates user:, presence: true
+
+  # need a multiple column validation, one or the other. research this
+
 
   has_many :comments
   has_many :post_votes

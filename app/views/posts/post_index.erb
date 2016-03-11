@@ -1,0 +1,5 @@
+<section>
+  <% @posts.each do |post| %>
+    <%= erb :'/posts/_post_item', locals: {post: post} %>
+  <%end%>
+</section>

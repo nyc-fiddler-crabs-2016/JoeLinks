@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
+
+<!-- Google Materual Design Lite -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+
+
   <!--
     application.css is where you put your styles
   -->
@@ -17,6 +24,9 @@
 
   <title></title>
 </head>
+<header>
+  <%= erb :'_nav' %>
+</header>
 <body>
   <%= yield %>
 </body>

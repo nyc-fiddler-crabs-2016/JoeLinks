@@ -1,0 +1,86 @@
+section {
+  width: 900px;
+  margin: 50px auto;
+}
+
+
+/*NAV*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+    background-color: #111;
+}
+
+nav .active {
+background-color:#4CAF50;
+}
+/*End NAV*/
+
+
+/*Post Items*/
+.post-item {
+  background-color: #f6f7eb;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.post-item a {
+  font-family: Helvetica;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.post-item .footer a {
+  font-family: Arial;
+  color: #74777A;
+  font-size: 1em;
+}
+
+.count {
+  text-align: right;
+  float: right;
+  font-family: Arial;
+  color: #74777A;
+  font-size: 1.5em;
+}
+
+/*End Post Items*/
+
+
+/*Commente Items*/
+/*Post Items*/
+.comment-item {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #C7C8C9;
+}
+
+.comment-item a {
+  font-family: Helvetica;
+  font-size: 1em;
+  text-decoration: none;
+  color: #9D9FA1;
+}
+
+
+/*End Comment Items*/

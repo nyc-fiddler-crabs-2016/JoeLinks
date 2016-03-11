@@ -1,0 +1,15 @@
+<section>
+  <h2><%= @user.username %></h2>
+  <p> <%= @user.description %> </p>
+  <p> <%= @user.posts_made_count %> Links Posted</p>
+  <p> <%= @user.comments_made_count %> Comments Made</p>
+</section>
+
+<section>
+  <h3>Posts:</h3>
+  <% @user.posts.each do |post| %>
+    <%= erb :'/posts/_post_item', locals: {post: post} %>
+  <%end%>
+
+
+</section>

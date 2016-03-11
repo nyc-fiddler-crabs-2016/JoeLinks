@@ -9,6 +9,16 @@ get '/posts/new' do
 end
 
 
+post'/posts' do
+  post = Post.new(params[:post])
+  if post.save
+    redirect "/posts/#{post.id}"
+  else
+    "ERROR"
+  end
+end
+
+
 get '/posts/:post_id' do
   @post = Post.find(params[:post_id])
   @comments = @post.comments_sorted_most_recent
@@ -16,12 +26,4 @@ get '/posts/:post_id' do
 end
 
 
-post'/posts' do
-  post = Post.new(params[:post])
 
-  if post.save
-    redirect "/posts/#{post.id}"
-  else
-    "ERROR"
-  end
-end

@@ -1,9 +1,9 @@
-user_amount         = 0
-post_amount         = 0
-comment_amount      = 0
+user_amount         = 6
+post_amount         = 69
+comment_amount      = 500
 
-post_vote_amount    = 500
-comment_vote_amount = 500
+post_vote_amount    = 400
+comment_vote_amount = 400
 
 
 # USERS

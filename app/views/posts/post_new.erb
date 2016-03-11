@@ -1,6 +1,6 @@
 <section>
     <form id="new-post-form" method="POST" action="/posts">
-       <input type="hidden" name="post[user_id]" value='1'>
+       <input type="hidden" name="post[user_id]" value='<%= session[:user_id] %>'>
 
 
       <div>

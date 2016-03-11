@@ -19,4 +19,9 @@ class User < ActiveRecord::Base
     self.comments.count
   end
 
+  def authenticate(password)
+    self.password_digest == password
+  end
+
+
 end

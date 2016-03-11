@@ -1,10 +1,11 @@
 <section>
+
    <%= erb :'/posts/_post_item', locals: {post: @post} %>
 
 
     <form id="new-comment-form" method="POST" action="/comments">
 
-      <input type="hidden" name="comment[user_id]" value='1'>
+      <input type="hidden" name="comment[user_id]" value="<%= session[:user_id] %>">
       <input type="hidden" name="comment[post_id]" value="<%= @post.id %>">
 
       <div>
